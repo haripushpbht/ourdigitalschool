@@ -5,55 +5,61 @@ fetch("data.json")
     const params = new URLSearchParams(window.location.search);
     const classId = params.get("class");
     const subjectId = params.get("subject");
+    const chapterId = params.get("chapter");
 
-    const pageTitle = document.getElementById("pageTitle");
+    const title = document.getElementById("pageTitle");
     const content = document.getElementById("content");
 
     const selectedClass = data.classes.find(c => c.id === classId);
-
     if (!selectedClass) {
-      pageTitle.innerText = "Class nahi mili";
+      title.innerText = "Class nahi mili";
       return;
     }
 
-    // SUBJECT LIST
+    // 1️⃣ SUBJECT LIST
     if (!subjectId) {
-      pageTitle.innerText = selectedClass.name + " – Subjects";
+      title.innerText = selectedClass.name + " – Subjects";
 
       selectedClass.subjects.forEach(sub => {
-        const a = document.createElement("a");
-        a.href = `class.html?class=${classId}&subject=${sub.id}`;
-        a.className = "class-box";
-        a.innerText = sub.name;
-        content.appendChild(a);
-        content.appendChild(document.createElement("br"));
-        content.appendChild(document.createElement("br"));
+        content.innerHTML += `
+          <a class="class-box"
+             href="class.html?class=${classId}&subject=${sub.id}">
+             ${sub.name}
+          </a><br><br>`;
       });
     }
 
-    // CHAPTER + AUDIO + VIDEO
-    else {
+    // 2️⃣ CHAPTER LIST
+    else if (!chapterId) {
       const subject = selectedClass.subjects.find(s => s.id === subjectId);
-      pageTitle.innerText = selectedClass.name + " | " + subject.name;
+      title.innerText = selectedClass.name + " | " + subject.name;
 
       subject.chapters.forEach(ch => {
-        const h3 = document.createElement("h3");
-        h3.innerText = ch.name;
-
-        const audio = document.createElement("audio");
-        audio.controls = true;
-        audio.src = ch.audio;
-
-        const iframe = document.createElement("iframe");
-        iframe.src = ch.video;
-        iframe.width = "100%";
-        iframe.height = "300";
-
-        content.appendChild(h3);
-        content.appendChild(audio);
-        content.appendChild(document.createElement("br"));
-        content.appendChild(iframe);
-        content.appendChild(document.createElement("hr"));
+        content.innerHTML += `
+          <a class="class-box"
+             href="class.html?class=${classId}&subject=${subjectId}&chapter=${ch.id}">
+             ${ch.name}
+          </a><br><br>`;
       });
+    }
+
+    // 3️⃣ AUDIO + VIDEO PAGE
+    else {
+      const subject = selectedClass.subjects.find(s => s.id === subjectId);
+      const chapter = subject.chapters.find(c => c.id === chapterId);
+
+      title.innerText = chapter.name;
+
+      content.innerHTML = `
+        <h3>🎧 Sunne ke liye</h3>
+        <audio controls src="${chapter.audio}"></audio>
+
+        <hr>
+
+        <h3>🎥 Dekhne ke liye</h3>
+        <iframe src="${chapter.video}"
+                width="100%" height="320"
+                allowfullscreen></iframe>
+      `;
     }
   });
