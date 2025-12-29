@@ -11,8 +11,14 @@
             {
               "id": "ch1",
               "name": "Knowing Our Numbers",
-              "audio": "https://drive.google.com/file/d/11UbmZ5kODwVFEZPMCf3bcAn4o0e3OqYn/view?usp=sharing",
-              "video": "VIDEO_DRIVE_LINK_HERE"
+              "audio": "AUDIO_LINK_HERE",
+              "video": "VIDEO_LINK_HERE"
+            },
+            {
+              "id": "ch2",
+              "name": "Whole Numbers",
+              "audio": "AUDIO_LINK_HERE",
+              "video": "VIDEO_LINK_HERE"
             }
           ]
         }
