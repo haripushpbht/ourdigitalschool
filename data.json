@@ -1,0 +1,22 @@
+{
+  "classes": [
+    {
+      "id": "6",
+      "name": "Class 6",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {
+              "id": "ch1",
+              "name": "Knowing Our Numbers",
+              "audio": "AUDIO_DRIVE_LINK_HERE",
+              "video": "VIDEO_DRIVE_LINK_HERE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
