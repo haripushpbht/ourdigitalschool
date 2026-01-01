@@ -8,19 +8,218 @@
           "id": "maths",
           "name": "Maths",
           "chapters": [
-            {
-              "id": "ch1",
-              "name": "Knowing Our Numbers",
-              "audio": "https://ia601703.us.archive.org/33/items/note-gpt-ai-podcast/NoteGPT_AI_Podcast_%E0%A4%86%E0%A4%88%E0%A4%B2%E0%A5%87%E0%A4%9F%20%E0%A4%B5%E0%A4%BF%E0%A4%A7%E0%A4%BF_%20%E0%A4%87%E0%A4%82%E0%A4%9F%E0%A5%80%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B6%E0%A4%A8%20%E0%A4%95%E0%A4%BE%20%E0%A4%86%E0%A4%B8%E0%A4%BE%E0%A4%A8%20%E0%A4%A4%E0%A4%B0%E0%A5%80%E0%A4%95%E0%A4%BE.mp3",
-              "video": "https://ia601704.us.archive.org/23/items/videoplayback_20260101_0558/videoplayback.mp4"
-            },
-            
-            {
-              "id": "ch2",
-              "name": "Whole Numbers",
-              "audio": "AUDIO_LINK_HERE",
-              "video": "VIDEO_LINK_HERE"
-            }
+            {"id":"ch1","name":"Knowing Our Numbers","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Whole Numbers","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Playing With Numbers","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Basic Geometrical Concepts","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Understanding Elementary Shapes","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "science",
+          "name": "Science",
+          "chapters": [
+            {"id":"ch1","name":"Food: Where Does it Come From","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Components of Food","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Fibre to Fabric","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Sorting Materials into Groups","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Fun with Magnets","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "chapters": [
+            {"id":"ch1","name":"The Fun They Had","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"The Sound of Music","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"The Little Girl","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"A Truly Beautiful Mind","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Rain on the Roof","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "7",
+      "name": "Class 7",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {"id":"ch1","name":"Integers","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Fractions and Decimals","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Simple Equations","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Lines and Angles","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Triangles and Circles","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "science",
+          "name": "Science",
+          "chapters": [
+            {"id":"ch1","name":"Nutrition in Animals","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Motion and Time","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Light","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Water: A Precious Resource","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Forest and Wildlife","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "english",
+          "name": "English",
+          "chapters": [
+            {"id":"ch1","name":"The Necklace","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Glimpses of the Past","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Bepin Choudhury’s Lapse of Memory","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"The Sound of Thunder","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"A Legend of the Northland","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "8",
+      "name": "Class 8",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {"id":"ch1","name":"Rational Numbers","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Linear Equations","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Understanding Quadrilaterals","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Data Handling","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Squares and Square Roots","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "science",
+          "name": "Science",
+          "chapters": [
+            {"id":"ch1","name":"Crop Production and Management","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Microorganisms","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Synthetic Fibres and Plastics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Materials: Metals and Non-Metals","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Coal and Petroleum","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "9",
+      "name": "Class 9",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {"id":"ch1","name":"Number Systems","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Algebra","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Geometry","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Mensuration","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Statistics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "science",
+          "name": "Science",
+          "chapters": [
+            {"id":"ch1","name":"Matter in Our Surroundings","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"The Fundamental Unit of Life","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"The Structure of Atom","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Motion","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Force and Laws of Motion","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "10",
+      "name": "Class 10",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {"id":"ch1","name":"Real Numbers","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Polynomials","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Pair of Linear Equations","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Triangles","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Coordinate Geometry","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "science",
+          "name": "Science",
+          "chapters": [
+            {"id":"ch1","name":"Chemical Reactions and Equations","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Acids, Bases and Salts","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Metals and Non-Metals","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Life Processes","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Our Environment","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "11",
+      "name": "Class 11",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {"id":"ch1","name":"Sets","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Relations and Functions","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Algebra","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Calculus","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Probability","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "physics",
+          "name": "Physics",
+          "chapters": [
+            {"id":"ch1","name":"Physical world","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Kinematics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Laws of Motion","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Work, Energy and Power","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Motion of System of Particles","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        }
+      ]
+    },
+
+    {
+      "id": "12",
+      "name": "Class 12",
+      "subjects": [
+        {
+          "id": "maths",
+          "name": "Maths",
+          "chapters": [
+            {"id":"ch1","name":"Relations and Functions","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Inverse Trigonometric Functions","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Matrices","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Determinants","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Continuity and Differentiability","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
+        },
+        {
+          "id": "physics",
+          "name": "Physics",
+          "chapters": [
+            {"id":"ch1","name":"Electrostatics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Current Electricity","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Magnetism and Matter","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Electromagnetic Induction","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Optics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
           ]
         }
       ]
