@@ -6,11 +6,52 @@ body {
   text-align: center;
 }
 
-/* HEADER */
+/* 🇮🇳 INDIAN FLAG FLOWING HEADER */
 header {
-  background: #0b5ed7;
-  color: white;
-  padding: 20px 10px;
+  position: relative;
+  padding: 35px 10px;
+  color: #000;
+  overflow: hidden;
+  text-align: center;
+
+  background: linear-gradient(
+    120deg,
+    #FF9933,
+    #ffffff,
+    #138808,
+    #FF9933
+  );
+  background-size: 400% 400%;
+  animation: tricolorFlow 8s ease-in-out infinite;
+}
+
+/* Heading */
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #0b3d91; /* Deep blue for contrast */
+}
+
+/* Tagline */
+.tagline {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Flow animation */
+@keyframes tricolorFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 header h1 {
