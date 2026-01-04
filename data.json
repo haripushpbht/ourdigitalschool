@@ -221,8 +221,17 @@
             {"id":"ch4","name":"Electromagnetic Induction","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
             {"id":"ch5","name":"Optics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
           ]
+        },
+        {
+          "id": "biology",
+          "name": "Biology",
+          "chapters": [
+            {"id":"ch1","name":"Electrostatics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch2","name":"Current Electricity","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch3","name":"Magnetism and Matter","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch4","name":"Electromagnetic Induction","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"},
+            {"id":"ch5","name":"Optics","audio":"AUDIO_LINK_HERE","video":"VIDEO_LINK_HERE"}
+          ]
         }
       ]
     }
-  ]
-}
