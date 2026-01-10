@@ -1,5 +1,5 @@
 /* =========================
-   GLOBAL RESET & BASE
+   GLOBAL RESET
 ========================= */
 * {
   box-sizing: border-box;
@@ -8,22 +8,16 @@
 body {
   margin: 0;
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
-  background: #f3f5f9;
+  background: #f1f5f9;
   color: #1f2937;
-  text-align: center;
-  line-height: 1.6;
 }
 
 /* =========================
-   🇮🇳 INDIAN FLAG FLOWING HEADER
+   🇮🇳 INDIAN FLAG FLOW HEADER
 ========================= */
-header,
-.digital-header {
-  position: relative;
+header {
   padding: 40px 15px;
-  overflow: hidden;
   text-align: center;
-
   background: linear-gradient(
     120deg,
     #ff9933,
@@ -31,23 +25,8 @@ header,
     #138808,
     #ff9933
   );
-  background-size: 400% 400%;
-  animation: tricolorFlow 10s ease-in-out infinite;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 700;
-  color: #0b3d91;
-  letter-spacing: 0.5px;
-}
-
-.tagline {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #111;
-  font-weight: 500;
+  background-size: 300% 300%;
+  animation: tricolorFlow 8s ease infinite;
 }
 
 @keyframes tricolorFlow {
@@ -56,171 +35,79 @@ header h1 {
   100% { background-position: 0% 50%; }
 }
 
-/* =========================
-   SECTIONS
-========================= */
-section {
-  padding: 25px 15px;
-}
-
-/* =========================
-   WELCOME & INFO BOX
-========================= */
-.welcome,
-.guardian {
-  background: #ffffff;
-  margin: 18px auto;
-  border-radius: 14px;
-  padding: 20px;
-  max-width: 900px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-}
-
-.welcome strong {
-  font-size: 18px;
-}
-
-.guardian {
-  background: linear-gradient(135deg, #fff7e6, #ffffff);
-}
-
-/* =========================
-   SECTION TITLES
-========================= */
-h2,
-.section-title {
-  font-size: 22px;
-  margin-bottom: 18px;
-  color: #0b5ed7;
-  font-weight: 600;
-}
-
-h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-  color: #1f2937;
-}
-
-/* =========================
-   GRID SYSTEM (CLASSES / SUBJECTS)
-========================= */
-.class-grid,
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-/* =========================
-   MODERN CARDS
-========================= */
-.class-box,
-.card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 22px 16px;
-  text-decoration: none;
-  color: #1f2937;
-  font-size: 17px;
-  font-weight: 600;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-/* Icon */
-.class-box::before,
-.card::before {
-  content: "📘";
-  font-size: 30px;
-  display: block;
-  margin-bottom: 12px;
-}
-
-/* Hover */
-.class-box:hover,
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.14);
-}
-
-/* Subject Icons */
-.card[data-subject="maths"]::before { content: "📐"; }
-.card[data-subject="physics"]::before { content: "⚡"; }
-.card[data-subject="chemistry"]::before { content: "🧪"; }
-.card[data-subject="biology"]::before { content: "🧬"; }
-
-/* =========================
-   CHAPTER ITEMS
-========================= */
-.chapter-item {
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 18px;
-  margin-bottom: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.07);
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.chapter-item h4 {
-  margin: 0 0 12px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-/* =========================
-   AUDIO / VIDEO BUTTONS
-========================= */
-.av-buttons {
-  display: flex;
-  gap: 12px;
-}
-
-.av-buttons button {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.25s ease;
-}
-
-.btn-audio {
-  background: #e3f2fd;
+header h1 {
+  margin: 0;
+  font-size: 34px;
   color: #0b3d91;
 }
 
-.btn-video {
-  background: #e8f5e9;
-  color: #1b5e20;
-}
-
-.av-buttons button:hover {
-  opacity: 0.85;
+.tagline {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* =========================
-   PLAYER
+   COMMON SECTIONS
+========================= */
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+h2, h3 {
+  margin-bottom: 20px;
+  color: #0b5ed7;
+  text-align: center;
+}
+
+/* =========================
+   CARD GRID (IMPORTANT)
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+/* =========================
+   MODERN CARD
+========================= */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 15px;
+  text-align: center;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0b5ed7;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #0b5ed7;
+  background: #0b5ed7;
+  color: #ffffff;
+}
+
+/* =========================
+   PLAYER BOX
 ========================= */
 .player-box {
   background: #ffffff;
-  margin: 20px auto;
-  padding: 18px;
-  border-radius: 14px;
-  max-width: 900px;
-  box-shadow: inset 0 0 10px rgba(0,0,0,0.08);
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-audio,
-video {
+audio, iframe {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 10px;
 }
 
@@ -228,14 +115,12 @@ video {
    FOOTER
 ========================= */
 footer {
-  background: #111827;
-  color: #e5e7eb;
+  background: #0f172a;
+  color: #cbd5f5;
+  text-align: center;
   padding: 20px;
+  margin-top: 40px;
   font-size: 14px;
-}
-
-footer span {
-  opacity: 0.85;
 }
 
 /* =========================
@@ -244,14 +129,5 @@ footer span {
 @media (max-width: 600px) {
   header h1 {
     font-size: 26px;
-  }
-
-  .tagline {
-    font-size: 14px;
-  }
-
-  .class-grid,
-  .grid {
-    gap: 14px;
   }
 }
