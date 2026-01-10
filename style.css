@@ -114,22 +114,24 @@ h3 {
 }
 
 /* =========================
-   MODERN CARDS
+   CARD DESIGN
 ========================= */
-.class-box,
 .card {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 22px 16px;
-  text-decoration: none;
-  color: #1f2937;
-  font-size: 17px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  position: relative;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
 /* Icon */
 .class-box::before,
 .card::before {
