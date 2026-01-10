@@ -7,8 +7,24 @@
 </head>
 <body>
 
-<h2 id="heading"></h2>
-<div id="content"></div>
+<header class="digital-header">
+  <h1 id="title">Digital School</h1>
+</header>
+
+<section class="container">
+  <div id="subjects"></div>
+  <div id="chapters"></div>
+
+  <div id="player" style="display:none;">
+    <h3 id="chapterName"></h3>
+
+    <h4>🎧 सुनने के लिए</h4>
+    <audio id="audioPlayer" controls></audio>
+
+    <h4>🎥 देखने के लिए</h4>
+    <video id="videoPlayer" controls width="100%"></video>
+  </div>
+</section>
 
 <script src="script.js"></script>
 </body>
