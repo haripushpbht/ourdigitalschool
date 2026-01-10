@@ -1,16 +1,25 @@
-/* GLOBAL RESET */
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", system-ui, sans-serif;
-  background: #f5f7fb;
+  background: #f4f6fb;
   color: #222;
 }
 
-/* HERO HEADER */
+/* HERO */
 .hero {
   text-align: center;
-  padding: 60px 15px;
-  background: linear-gradient(120deg, #FF9933, #ffffff, #138808);
+  padding: 70px 15px;
+  background: linear-gradient(
+    120deg,
+    #ff9933,
+    #ffffff,
+    #138808
+  );
   background-size: 300% 300%;
   animation: wave 8s ease infinite;
 }
@@ -22,26 +31,22 @@ body {
 }
 
 .hero h1 {
+  font-size: 38px;
   margin: 0;
-  font-size: 36px;
   color: #0b3d91;
 }
 
 .tagline {
-  margin-top: 10px;
   font-size: 18px;
-}
-
-.tagline span {
-  font-weight: bold;
+  margin-top: 12px;
 }
 
 .hero-btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 22px;
+  margin-top: 25px;
+  padding: 14px 28px;
   background: #0b5ed7;
-  color: white;
+  color: #fff;
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
@@ -50,70 +55,73 @@ body {
 /* INTRO */
 .intro {
   max-width: 900px;
-  margin: 40px auto;
-  text-align: center;
+  margin: 50px auto;
   padding: 0 15px;
+  text-align: center;
 }
 
-/* CLASS SECTION */
+.intro h2 {
+  color: #0b5ed7;
+}
+
+/* CLASSES */
 .classes {
-  background: white;
-  padding: 40px 15px;
+  background: #ffffff;
+  padding: 50px 15px;
 }
 
 .classes h2 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .class-grid {
   max-width: 900px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 22px;
 }
 
 .class-card {
-  background: #f0f4ff;
-  border-radius: 12px;
-  padding: 25px 10px;
+  background: #f1f5ff;
+  border-radius: 14px;
+  padding: 30px 10px;
   text-align: center;
-  text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+  text-decoration: none;
   color: #0b5ed7;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .class-card:hover {
   background: #0b5ed7;
   color: white;
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
-/* TRUST SECTION */
+/* TRUST */
 .trust {
-  padding: 40px 15px;
-  background: #f5f7fb;
+  padding: 50px 15px;
   text-align: center;
 }
 
 .trust-grid {
   max-width: 700px;
-  margin: 25px auto 0;
+  margin: 30px auto 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
 }
 
 .trust-box {
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  padding: 18px;
+  border-radius: 12px;
   font-weight: 500;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 /* FOOTER */
@@ -121,6 +129,6 @@ footer {
   background: #111827;
   color: #ccc;
   text-align: center;
-  padding: 20px;
+  padding: 22px;
   font-size: 14px;
 }
