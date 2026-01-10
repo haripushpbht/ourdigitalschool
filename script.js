@@ -16,34 +16,39 @@ fetch("data.json")
       return;
     }
 
-    // 1️⃣ SUBJECT LIST
+    /* SUBJECT LIST */
     if (!subjectId) {
       title.innerText = selectedClass.name + " – Subjects";
+      content.innerHTML = `<div class="grid"></div>`;
+      const grid = document.querySelector(".grid");
 
       selectedClass.subjects.forEach(sub => {
-        content.innerHTML += `
-          <a class="class-box"
+        grid.innerHTML += `
+          <a class="card"
              href="class.html?class=${classId}&subject=${sub.id}">
-             ${sub.name}
-          </a><br><br>`;
+             📘 ${sub.name}
+          </a>`;
       });
     }
 
-    // 2️⃣ CHAPTER LIST
+    /* CHAPTER LIST */
     else if (!chapterId) {
       const subject = selectedClass.subjects.find(s => s.id === subjectId);
       title.innerText = selectedClass.name + " | " + subject.name;
 
+      content.innerHTML = `<div class="grid"></div>`;
+      const grid = document.querySelector(".grid");
+
       subject.chapters.forEach(ch => {
-        content.innerHTML += `
-          <a class="class-box"
+        grid.innerHTML += `
+          <a class="card"
              href="class.html?class=${classId}&subject=${subjectId}&chapter=${ch.id}">
-             ${ch.name}
-          </a><br><br>`;
+             📖 ${ch.name}
+          </a>`;
       });
     }
 
-    // 3️⃣ AUDIO + VIDEO PAGE
+    /* AUDIO + VIDEO */
     else {
       const subject = selectedClass.subjects.find(s => s.id === subjectId);
       const chapter = subject.chapters.find(c => c.id === chapterId);
@@ -51,15 +56,13 @@ fetch("data.json")
       title.innerText = chapter.name;
 
       content.innerHTML = `
-        <h3>🎧 Sunne ke liye</h3>
-        <audio controls src="${chapter.audio}"></audio>
+        <div class="player-box">
+          <h3>🎧 Audio Lecture</h3>
+          <audio controls src="${chapter.audio}"></audio>
 
-        <hr>
-
-        <h3>🎥 Dekhne ke liye</h3>
-        <iframe src="${chapter.video}"
-                width="100%" height="320"
-                allowfullscreen></iframe>
+          <h3 style="margin-top:25px;">🎥 Video Lecture</h3>
+          <iframe src="${chapter.video}" height="320" allowfullscreen></iframe>
+        </div>
       `;
     }
   });
